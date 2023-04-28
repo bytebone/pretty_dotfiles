@@ -5,16 +5,19 @@ the dotfiles for my linux theme. managed by chezmoi, built for arch.
 
 <p align="center">
   <img alt="empty desktop with PolyBar" src="img/bspwm_theme-desktop.png" style="border-radius: 1rem; box-shadow: 4px 4px 12px black">
+  <br>
   An empty desktop using PolyBar
 </p>
 
 <p align="center">
   <img alt="screenshot of multiple terminals" src="img/bspwm_theme-terminal.png" style="border-radius: 1rem; box-shadow: 4px 4px 12px black">
+  <br>
   The Alacritty terminal with Starship, Macchina and Neofetch
 </p>
 
 <p align="center">
   <img alt="screenshot of notifications with differing urgency" src="img/bspwm_theme-notifications.png" style="border-radius: 1rem; box-shadow: 4px 4px 12px black">
+  <br>
   The Alacritty terminal with Starship, Macchina and Neofetch
 </p>
 
