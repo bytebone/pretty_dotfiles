@@ -1,0 +1,36 @@
+spacing = 2
+padding = 1
+
+separator = ""
+
+prefer_small_ascii = true
+
+[palette]
+visible = false
+type = "Light"
+glyph = " "
+
+[bar]
+visible = false
+glyph = '󰝤'
+hide_delimiters = true
+
+[box]
+visible = true
+# title = "arch 4 life"
+border = "rounded"
+
+[box.inner_margin]
+x = 0
+y = 0
+
+[keys]
+# kernel 		= ""
+# de 			= "2"
+terminal 	= "Term"
+# uptime		= "󱑂"
+# cpu			= "󰍛"
+# memory		= ""
+
+[custom_ascii]
+path = "~/.config/macchina/ascii/bunnysign"
