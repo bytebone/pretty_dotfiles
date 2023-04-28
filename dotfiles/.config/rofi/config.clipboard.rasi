@@ -1,0 +1,22 @@
+@import "~/.config/rofi/config.base.rasi"
+
+configuration {
+    show-icons: false;
+}
+
+* {
+    font: "CartographCF Nerd Font 12";
+}
+
+window {
+    width: 500;
+    height: 400;
+}
+
+element {
+    padding: 5 0 5 15;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
