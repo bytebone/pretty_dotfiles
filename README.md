@@ -1,5 +1,7 @@
 # pretty_dotfiles
-the dotfiles for my linux theme. managed by chezmoi, built for arch.
+The dotfiles for my Linux theme. Managed by chezmoi, built for Arch.
+
+With a focus on productivity (small gaps and maximized screen real estate) while still adding sprinkles of minimalistic and modern design, this theme will be interesting for anyone looking to get into Bwpsm fast and uncomplicated.
 
 ## Screenshots
 
@@ -21,7 +23,6 @@ the dotfiles for my linux theme. managed by chezmoi, built for arch.
   The Alacritty terminal with Starship, Macchina and Neofetch
 </p>
 
-
 ## Programs used
 
 - WM: Bwpsm
@@ -39,3 +40,8 @@ the dotfiles for my linux theme. managed by chezmoi, built for arch.
 I've never tried copy-pasting this config onto another device, so there might be some minor issues, especially inside the Bwpsm config (since it expects to specific display names) and PolyBar (which also expects multiple displays).
 
 Also note that there is no `.bashrc` included in the repo, meaning you need to manually add the call to neofetch/macchina/starship to your local config.
+
+## Credits
+
+- The main OS config files (mainly bspwm, Starship and sxkhd) are based on the stock config of the EndeavourOS Bspwm theme, but have been modified a lot.
+- The Dunst notification design is heavily based on the [Dracula Theme](https://github.com/dracula/dunst) with minor adjustments. 
