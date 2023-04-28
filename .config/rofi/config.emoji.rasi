@@ -1,0 +1,56 @@
+@import "~/.config/rofi/config.base.rasi"
+
+configuration {
+    show-icons: false;
+    modi: "emoji";
+//    emoji-format: "{emoji}";
+}
+
+* {
+    font: "CartographCF Nerd Font 18";
+}
+
+window {
+    width: 500;
+    height: 550;
+}
+
+mainbox {
+    children: [ "inputbar", "message", "listview"];
+    spacing: 10px;
+}
+
+entry {
+    placeholder: "";
+}
+
+textbox {
+//    font: "CartographCF Nerd Font 14";
+}
+
+listview {
+    scrollbar: true;
+    layout: vertical;
+    columns: 8;
+    lines: 8;
+    fixed-columns: false;
+}
+
+element {
+    orientation: vertical;
+}
+
+element selected.normal {
+    border: 0;
+}
+element selected.urgent {
+    border: 0;
+}
+element selected.active {
+    border: 0;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}

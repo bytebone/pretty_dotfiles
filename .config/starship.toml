@@ -1,0 +1,172 @@
+# prop storage
+# $character
+
+# General Formatting
+palette = "catppuccin"
+# add_newline = false
+
+format = """\
+$character[$directory](fg:blue)\
+(  [$git_branch( $git_status)](fg:peach bold) with )\
+([$package$aws$conda$dart$docker_context$elixir$elm$golang$java$julia$nim$nix_shell$nodejs$perl$php$python$ruby$rust$swift](fg:green))\
+(in $fill[$cmd_duration](fg:yellow))
+([$sudo ](fg:red))($status)\\$ """
+
+[username]
+format = "$user"
+# style_user = "bold"
+# style_root = "bold red"
+show_always = true
+
+[hostname]
+disabled = false
+format = "@$hostname"
+# style = "bold #f38ba8"
+ssh_only = true
+# trim_at = "-"
+
+[sudo]
+disabled = false
+format = "$symbol"
+symbol = ""
+# style = "red bold"
+
+[directory]
+format = "($read_only )$path"
+# style = "fg:base bg:blue"
+read_only = ""
+truncate_to_repo = false
+truncation_length = 4
+truncation_symbol = ".../"
+
+[fill]
+disabled = true
+symbol = " "
+
+[git_branch]
+format = "$symbol $branch(:$remote_branch)"
+symbol = ""
+
+[git_status]
+format = "(\\[$all_status$ahead_behind\\])"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+deleted = "x"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+# style = "fg:peach"
+
+[cmd_duration]
+disabled = true
+format = "$duration 祥"
+# style = "bg:yellow fg:base"
+min_time = 1_000
+
+## SECOND LINE/ROW: Prompt
+[character]
+disabled = true
+# success_symbol = "[󰉋](blue)"
+success_symbol = ""
+error_symbol = "[](red)"
+
+# SYMBOLS
+[status]
+disabled = true
+format = '[$symbol$status_common_meaning$status_signal_name$status_maybe_int]($style)'
+map_symbol = true
+pipestatus = true
+style = "red"
+symbol = ""
+
+[aws]
+symbol = ""
+format = "$symbol ($version )"
+
+[conda]
+symbol = ""
+format = "$symbol ($version )"
+
+[dart]
+symbol = ""
+format = "$symbol ($version )"
+
+[docker_context]
+symbol = ""
+format = "$symbol ($version )"
+
+[elixir]
+symbol = ""
+format = "$symbol ($version )"
+
+[elm]
+symbol = ""
+format = "$symbol ($version )"
+
+[golang]
+symbol = ""
+format = "$symbol ($version )"
+
+[hg_branch]
+symbol = ""
+format = "$symbol ($version )"
+
+[java]
+symbol = ""
+format = "$symbol ($version )"
+
+[julia]
+symbol = ""
+format = "$symbol ($version )"
+
+[nim]
+symbol = ""
+format = "$symbol ($version )"
+
+[nix_shell]
+symbol = ""
+format = "$symbol ($version )"
+
+[nodejs]
+symbol = ""
+format = "$symbol ($version )"
+
+[package]
+symbol = ""
+format = "$symbol ($version )"
+
+[perl]
+symbol = ""
+format = "$symbol ($version )"
+
+[php]
+symbol = ""
+format = "$symbol ($version )"
+
+[python]
+symbol = ""
+format = "$symbol ($version )"
+
+[ruby]
+symbol = ""
+format = "$symbol ($version )"
+
+[rust]
+symbol = ""
+format = "$symbol ($version )"
+
+[swift]
+symbol = "ﯣ"
+format = "$symbol ($version )"
+
+# Color Palette
+
+[palettes.catppuccin]
+red = "#ed8796"
+mauve = "#c6a0f6"
+maroon = "#ee99a0"
+peach = "#f5a97f"
+yellow = "#eed49f"
+green = "#a6e3a1"
+teal = "#8bd5ca"
+blue = "#8aadf4"
+text = "#cad3f5"
+base = "#24273a"

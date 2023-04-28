@@ -1,0 +1,15 @@
+physical_cores = false
+
+long_uptime = false
+long_kernel = false
+
+show = [
+	"DesktopEnvironment",
+	"Kernel",
+	"Terminal",
+	"Uptime",
+	# "Processor",
+	"Memory",
+]
+
+theme = "rainer"
